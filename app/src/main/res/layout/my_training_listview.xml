@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    tools:context=".MainActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <FrameLayout
+            android:id="@+id/main_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/toolbar"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/DrawingImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:sothree="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/sliding_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                sothree:umanoDragView="@+id/activity_status"
+                sothree:umanoOverlay="true"
+                sothree:umanoPanelHeight="345dp"
+                sothree:umanoParalaxOffset="100dp"
+                sothree:umanoShadowHeight="4dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/graph"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:divider="@drawable/vertical_divider" />
+
+                    <ImageView
+                        android:id="@+id/back_to_now_right"
+                        android:layout_width="75px"
+                        android:layout_height="60px"
+                        android:layout_alignParentRight="true"
+                        android:rotationY="180"
+                        android:src="@drawable/back_to_now"/>
+
+                    <ImageView
+                        android:id="@+id/back_to_now_left"
+                        android:layout_width="75px"
+                        android:layout_height="60px"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/back_to_now"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="125dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/calendet_mark_right" />
+
+                    <ImageView
+                        android:id="@+id/shadow"
+                        android:layout_width="20dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="215dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/calendet_mark_left" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/my_training"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/activity_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="9dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:scaleX="0.50"
+                        android:scaleY="0.50"
+                        android:src="@drawable/drag_button_normal" />
+
+
+                    <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+                        android:id="@+id/listan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/activity_status"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+            </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

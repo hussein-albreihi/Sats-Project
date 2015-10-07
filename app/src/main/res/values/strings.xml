@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SATSTrainingApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="refresh">refresh</string>
+    <string name="action_menu">action_menu</string>
+    <string name="sats_logo">sats_logo</string>
+    <string name="button_cancel">Avboka</string>
+    <string name="details">detaljer</string>
+    <string name="zumba">Zumba</string>
+    <string name="center">Center:</string>
+    <string name="date">Datum:</string>
+    <string name="instructor">Instruktör:</string>
+    <string name="cardio">Kondition</string>
+    <string name="strength">Styrka</string>
+    <string name="flexibility">Rörlighet</string>
+    <string name="balance">Balans</string>
+    <string name="agility">Spänst</string>
+    <string name="add_to_calendar">Lägg till i kalender</string>
+    <string name="class_info">Mer om passet</string>
+    <string name="comments">0 kommentarer</string>
+    <string name="own_class_info">Träningsprogram</string>
+    <string name="type">type</string>
+    <string name="class_date">date</string>
+    <string name="add_comment">Lägg till kommentar</string>
+    <string name="completed_or_not">Avklarat?</string>
+    <string name="my_training">MIN TRÄNING</string>
+</resources>
